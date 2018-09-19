@@ -1,0 +1,13 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+			Namespace="cursoUI5.pagoti.helloEclipse.servico">
+			<EntityType Name="CategoriesType">
+				<Key><PropertyRef Name="id"/></Key><Property Name="id" Type="Edm.Int32" Nullable="false"/><Property Name="name" Type="Edm.String" MaxLength="20"/><Property Name="audit.created_by" Type="Edm.String" MaxLength="20"/><Property Name="audit.created_on" Type="Edm.DateTime"/><Property Name="audit.created_at" Type="Edm.Time"/></EntityType>
+			<EntityType Name="ProdutosType">
+				<Key><PropertyRef Name="id_produto"/></Key><Property Name="id_produto" Type="Edm.Int32" Nullable="false"/><Property Name="produto" Type="Edm.String" MaxLength="30"/><Property Name="id_categoria" Type="Edm.Int32"/><Property Name="categoria" Type="Edm.String" MaxLength="20"/><Property Name="price" Type="Edm.Decimal" Precision="10" Scale="2"/><Property Name="rating" Type="Edm.Int16"/></EntityType>
+			<EntityContainer Name="servico" m:IsDefaultEntityContainer="true"><EntitySet Name="Categories" EntityType="cursoUI5.pagoti.helloEclipse.servico.CategoriesType"/><EntitySet Name="Produtos" EntityType="cursoUI5.pagoti.helloEclipse.servico.ProdutosType"/></EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

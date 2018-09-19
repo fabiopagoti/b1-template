@@ -1,0 +1,16 @@
+<mvc:View controllerName="alfaerp.template.Template.controller.HANA" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="Lista de Categorias usando oData do HANA">
+				<content>
+					<List items="{api>/Categories}" >
+						<items>
+							<StandardListItem title="{api>id} - {api>name}" />
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

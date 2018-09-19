@@ -1,0 +1,51 @@
+{
+  "welcomeFile": "/webapp/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/alfaerp",
+      "target": {
+        "type": "destination",
+        "name": "ALFAERP_HANA",
+        "entryPath": "/alfaerp"
+      },
+      "description": "AlfaERP - HANA"
+    },
+    {
+      "path": "/cursoUI5",
+      "target": {
+        "type": "destination",
+        "name": "ALFAERP_HANA",
+        "entryPath": "/cursoUI5"
+      },
+      "description": "AlfaERP - HANA - Pacote do Curso"
+    },
+    {
+      "path": "/b1s/v1",
+      "target": {
+        "type": "destination",
+        "name": "ALFAERP_B1_SL",
+        "entryPath": "/b1s/v1"
+      },
+      "description": "AlfaERP - B1 - SL"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}

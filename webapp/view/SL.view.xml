@@ -1,0 +1,16 @@
+<mvc:View controllerName="alfaerp.template.Template.controller.SL" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="Lista de Bancos usando SL">
+				<content>
+					<List items="{/value}" >
+						<items>
+							<StandardListItem title="{BankCode}" description="{BankName}" />
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
