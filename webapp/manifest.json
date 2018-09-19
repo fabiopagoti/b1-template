@@ -76,8 +76,10 @@
 				}
 			},
 			"": {
+				"type": "sap.ui.model.odata.v4.ODataModel",
 				"settings": {
-					"defaultBindingMode": "TwoWay"
+					"synchronizationMode": "None",
+					"groupId":"$direct"
 				},
 				"dataSource": "ServiceLayer",
 				"preload": true
