@@ -110,14 +110,26 @@
 				"clearControlAggregation": false
 			},
 			"routes": [{
+					"name": "Root",
+					"pattern": "",
+					"target": [
+						"Root"
+					]
+				}, {
 					"name": "HANA",
 					"pattern": "HANA",
 					"target": [
 						"HANA"
 					]
 				}, {
+					"name": "XS",
+					"pattern": "XS",
+					"target": [
+						"XS"
+					]
+				}, {
 					"name": "SL",
-					"pattern": "",
+					"pattern": "SL",
 					"target": [
 						"SL"
 					]
@@ -125,8 +137,14 @@
 
 			],
 			"targets": {
+				"Root": {
+					"viewName": "Root"
+				},
 				"HANA": {
 					"viewName": "HANA"
+				},
+				"XS": {
+					"viewName": "XS"
 				},
 				"SL": {
 					"viewName": "SL"
