@@ -53,7 +53,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "alfaerp.template.Template.view.HANA",
+			"viewName": "alfaerp.template.Template.view.Root",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -106,14 +106,14 @@
 				"async": true,
 				"viewPath": "alfaerp.template.Template.view",
 				"controlAggregation": "pages",
-				"controlId": "idAppControl",
-				"clearControlAggregation": false
+				"controlId": "root",
+				"clearControlAggregation": true
 			},
 			"routes": [{
-					"name": "Root",
+					"name": "Menu",
 					"pattern": "",
 					"target": [
-						"Root"
+						"Menu"
 					]
 				}, {
 					"name": "HANA",
@@ -137,8 +137,8 @@
 
 			],
 			"targets": {
-				"Root": {
-					"viewName": "Root"
+				"Menu": {
+					"viewName": "Menu"
 				},
 				"HANA": {
 					"viewName": "HANA"
