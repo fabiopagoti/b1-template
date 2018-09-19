@@ -4,7 +4,7 @@
 		<pages>
 			<Page title="Lista de Bancos usando SL">
 				<content>
-					<List items="{/value}" >
+					<List items="{/Banks}" >
 						<items>
 							<StandardListItem title="{BankCode}" description="{BankName}" />
 						</items>
